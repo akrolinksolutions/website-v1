@@ -13,7 +13,7 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   experimental: {
-    optimizeCss: true,
+    // optimizeCss: true, // Disabled due to missing critters dependency
   },
   compress: true,
   poweredByHeader: false,
