@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Akrolink Solutions Logo](public/placeholder-logo.svg)
+![Akrolink Solutions Logo](public/logoWithBg.png)
 
 **Expert CFL Customs Clearance Services at Heathrow Airport**
 

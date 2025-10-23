@@ -1,18 +1,19 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
-
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import Logo from "@/public/logo.png";
+import Image from "next/image";
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Contact", href: "/contact" },
-  ]
+  ];
 
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50 animate-fade-in-up">
@@ -20,10 +21,14 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-              <span className="text-primary-foreground font-bold text-lg">A</span>
+            <div className="">
+              <span className="">
+                <Image src={Logo} alt="Akrolink" width={30} height={30} />
+              </span>
             </div>
-            <span className="font-bold text-lg text-foreground hidden sm:inline">Akrolink</span>
+            <span className="font-bold text-lg text-foreground hidden sm:inline">
+              Akrolink
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -82,5 +87,5 @@ export default function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }

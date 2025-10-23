@@ -79,8 +79,8 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                <a href="tel:+441234567890" className="hover:text-accent transition-colors">
-                  +44 (0) 123 456 7890
+                <a href="tel:+918100306576" className="hover:text-accent transition-colors">
+                  +91 8100306576 / +91 9136872044
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -91,7 +91,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5" />
-                <span>Heathrow, London, UK</span>
+                <span>167-169 Great Portland Street, 5th Floor, London, United Kingdom, W1W 5PF</span>
               </li>
             </ul>
           </div>

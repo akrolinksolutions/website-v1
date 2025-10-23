@@ -70,13 +70,19 @@ export const metadata: Metadata = {
         height: 630,
         alt: 'CFL Customs Clearance Services at Heathrow Airport',
       },
+      {
+        url: '/logoWithBg.png',
+        width: 512,
+        height: 512,
+        alt: 'Akrolink Solutions Limited Logo',
+      },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Akrolink Solutions Limited - CFL Customs Clearance at Heathrow',
     description: 'Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL.',
-    images: ['/customs-clearance-logistics-warehouse-heathrow.jpg'],
+    images: ['/customs-clearance-logistics-warehouse-heathrow.jpg', '/logoWithBg.png'],
   },
   robots: {
     index: true,
@@ -108,17 +114,19 @@ export default function RootLayout({
     "name": "Akrolink Solutions Limited",
     "description": "Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL",
     "url": "https://akrolinksolutions.com",
-    "logo": "https://akrolinksolutions.com/placeholder-logo.png",
+    "logo": "https://akrolinksolutions.com/logoWithBg.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+44-XXX-XXX-XXXX",
+      "telephone": "+91 8100306576",
       "contactType": "customer service",
       "areaServed": "GB",
       "availableLanguage": "English"
     },
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "167-169 Great Portland Street, 5th Floor",
       "addressLocality": "London",
+      "postalCode": "W1W 5PF",
       "addressCountry": "GB"
     },
     "sameAs": [
@@ -170,9 +178,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
         <meta name="theme-color" content="#000000" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="msapplication-config" content="/browserconfig.xml" />

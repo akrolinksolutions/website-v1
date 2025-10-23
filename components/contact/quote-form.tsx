@@ -1,17 +1,21 @@
 "use client"
 
 import type React from "react"
-
 import { useEffect, useRef, useState } from "react"
 
-export default function ContactForm() {
+export default function QuoteForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
-    subject: "",
-    message: "",
+    shipmentType: "",
+    originCountry: "",
+    destinationCountry: "",
+    goodsDescription: "",
+    estimatedValue: "",
+    urgency: "",
+    additionalInfo: "",
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -36,8 +40,13 @@ export default function ContactForm() {
         email: "",
         phone: "",
         company: "",
-        subject: "",
-        message: "",
+        shipmentType: "",
+        originCountry: "",
+        destinationCountry: "",
+        goodsDescription: "",
+        estimatedValue: "",
+        urgency: "",
+        additionalInfo: "",
       })
       setTimeout(() => setSubmitStatus("idle"), 3000)
     } catch (error) {
@@ -47,8 +56,10 @@ export default function ContactForm() {
       setIsSubmitting(false)
     }
   }
+
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -75,9 +86,10 @@ export default function ContactForm() {
       }
     }
   }, [])
+
   return (
     <div ref={sectionRef} className={`aos-fade-left ${isVisible ? 'aos-animate' : ''}`}>
-      <h2 className="text-3xl font-bold text-foreground mb-8">Send us a Message</h2>
+      <h2 className="text-3xl font-bold text-foreground mb-8">Get Your Free Quote</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -118,7 +130,7 @@ export default function ContactForm() {
           {/* Phone */}
           <div>
             <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-              Phone Number
+              Phone Number *
             </label>
             <input
               type="tel"
@@ -126,6 +138,7 @@ export default function ContactForm() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
+              required
               className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
               placeholder="+91 8100306576 / +91 9136872044"
             />
@@ -146,44 +159,129 @@ export default function ContactForm() {
               placeholder="Your Company"
             />
           </div>
+
+          {/* Shipment Type */}
+          <div>
+            <label htmlFor="shipmentType" className="block text-sm font-medium text-foreground mb-2">
+              Shipment Type *
+            </label>
+            <select
+              id="shipmentType"
+              name="shipmentType"
+              value={formData.shipmentType}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+            >
+              <option value="">Select shipment type</option>
+              <option value="air-courier">Air Courier (CFL)</option>
+              <option value="sea-freight">Sea Freight</option>
+              <option value="air-freight">Air Freight</option>
+              <option value="express">Express Delivery</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          {/* Origin Country */}
+          <div>
+            <label htmlFor="originCountry" className="block text-sm font-medium text-foreground mb-2">
+              Origin Country *
+            </label>
+            <input
+              type="text"
+              id="originCountry"
+              name="originCountry"
+              value={formData.originCountry}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+              placeholder="e.g., China, USA, Germany"
+            />
+          </div>
+
+          {/* Destination Country */}
+          <div>
+            <label htmlFor="destinationCountry" className="block text-sm font-medium text-foreground mb-2">
+              Destination Country *
+            </label>
+            <input
+              type="text"
+              id="destinationCountry"
+              name="destinationCountry"
+              value={formData.destinationCountry}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+              placeholder="United Kingdom"
+            />
+          </div>
+
+          {/* Estimated Value */}
+          <div>
+            <label htmlFor="estimatedValue" className="block text-sm font-medium text-foreground mb-2">
+              Estimated Value (GBP)
+            </label>
+            <input
+              type="text"
+              id="estimatedValue"
+              name="estimatedValue"
+              value={formData.estimatedValue}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+              placeholder="£1,000 - £5,000"
+            />
+          </div>
         </div>
 
-        {/* Subject */}
+        {/* Goods Description */}
         <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-            Subject *
+          <label htmlFor="goodsDescription" className="block text-sm font-medium text-foreground mb-2">
+            Goods Description *
           </label>
-          <select
-            id="subject"
-            name="subject"
-            value={formData.subject}
+          <textarea
+            id="goodsDescription"
+            name="goodsDescription"
+            value={formData.goodsDescription}
             onChange={handleChange}
             required
+            rows={4}
+            className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none"
+            placeholder="Please describe your goods in detail (materials, purpose, quantity, etc.)"
+          ></textarea>
+        </div>
+
+        {/* Urgency */}
+        <div>
+          <label htmlFor="urgency" className="block text-sm font-medium text-foreground mb-2">
+            Urgency Level
+          </label>
+          <select
+            id="urgency"
+            name="urgency"
+            value={formData.urgency}
+            onChange={handleChange}
             className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
           >
-            <option value="">Select a subject</option>
-            <option value="customs-clearance">Customs Clearance Inquiry</option>
-            <option value="import-documentation">Import Documentation</option>
-            <option value="duty-optimization">Duty Optimization</option>
-            <option value="general">General Inquiry</option>
-            <option value="other">Other</option>
+            <option value="">Select urgency</option>
+            <option value="standard">Standard (5-7 business days)</option>
+            <option value="express">Express (2-3 business days)</option>
+            <option value="urgent">Urgent (Same day)</option>
           </select>
         </div>
 
-        {/* Message */}
+        {/* Additional Information */}
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-            Message *
+          <label htmlFor="additionalInfo" className="block text-sm font-medium text-foreground mb-2">
+            Additional Information
           </label>
           <textarea
-            id="message"
-            name="message"
-            value={formData.message}
+            id="additionalInfo"
+            name="additionalInfo"
+            value={formData.additionalInfo}
             onChange={handleChange}
-            required
-            rows={6}
+            rows={4}
             className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none"
-            placeholder="Tell us about your customs clearance needs..."
+            placeholder="Any special requirements, existing HS codes, or additional notes..."
           ></textarea>
         </div>
 
@@ -193,13 +291,13 @@ export default function ContactForm() {
           disabled={isSubmitting}
           className="w-full px-6 py-3 bg-linear-to-r from-primary to-accent text-primary-foreground rounded-lg hover:opacity-90 transition-all duration-300 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isSubmitting ? "Sending..." : "Send Message"}
+          {isSubmitting ? "Getting Your Quote..." : "Get Free Quote"}
         </button>
 
         {/* Status Messages */}
         {submitStatus === "success" && (
           <div className="p-4 bg-green-50 border border-green-200 rounded-lg aos-fade-up">
-            <p className="text-green-800 font-medium">Thank you! We'll get back to you soon.</p>
+            <p className="text-green-800 font-medium">Thank you! We'll prepare your quote and get back to you within 24 hours.</p>
           </div>
         )}
 

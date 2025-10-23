@@ -6,13 +6,13 @@ export default function SchemaMarkup() {
     "name": "Akrolink Solutions Limited",
     "description": "Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL",
     "url": "https://akrolinksolutions.com",
-    "telephone": "+44-XXX-XXX-XXXX",
+    "telephone": "+91 8100306576",
     "email": "info@akrolinksolutions.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Heathrow Airport",
+      "streetAddress": "167-169 Great Portland Street, 5th Floor",
       "addressLocality": "London",
-      "postalCode": "TW6 1AP",
+      "postalCode": "W1W 5PF",
       "addressCountry": "GB"
     },
     "geo": {

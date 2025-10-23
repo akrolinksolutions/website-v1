@@ -7,8 +7,8 @@ const contactDetails = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+44 (0) 123 456 7890",
-    href: "tel:+441234567890",
+    value: "+91 8100306576 / +91 9136872044",
+    href: "tel:+918100306576",
   },
   {
     icon: Mail,
@@ -19,7 +19,7 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Address",
-    value: "Heathrow, London, UK",
+    value: "167-169 Great Portland Street, 5th Floor, London, United Kingdom, W1W 5PF",
     href: "#",
   },
   {
@@ -74,7 +74,7 @@ export default function ContactInfo() {
               href={detail.href}
               className="flex gap-4 p-6 bg-card rounded-xl border border-border hover:border-accent hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-linear-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-all">
                   <Icon size={24} className="text-primary" />
                 </div>

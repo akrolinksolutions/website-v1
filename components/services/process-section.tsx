@@ -71,8 +71,8 @@ export default function ProcessSection() {
     <section ref={sectionRef} className="py-20 bg-linear-to-br from-primary/5 to-accent/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="aos-fade-up text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Process</h2>
-          <p className="aos-fade-up aos-delay-200 text-lg text-foreground/60 max-w-2xl mx-auto">
+          <h2 className=" text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Process</h2>
+          <p className=" aos-delay-200 text-lg text-foreground/60 max-w-2xl mx-auto">
             A specialized CFL customs clearance process designed for efficiency, compliance, and cost optimization at Heathrow Airport
           </p>
         </div>

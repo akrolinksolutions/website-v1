@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import ContactHero from "@/components/contact/contact-hero"
 import ContactForm from "@/components/contact/contact-form"
 import ContactInfo from "@/components/contact/contact-info"
+import GoogleMap from "@/components/contact/google-map"
 
 export const metadata: Metadata = {
   title: "Contact Akrolink Solutions - CFL Customs Clearance at Heathrow",
@@ -43,8 +44,9 @@ export default function Contact() {
           <div className="lg:col-span-2">
             <ContactForm />
           </div>
-          <div>
+          <div className="space-y-8">
             <ContactInfo />
+            <GoogleMap />
           </div>
         </div>
       </div>
