@@ -4,6 +4,7 @@ const CRITICAL_ASSETS = [
   "/",
   "/customs-clearance-logistics-warehouse-heathrow.jpg",
   "/icon.svg",
+  "/logo.png",
   "/manifest.json",
 ];
 
