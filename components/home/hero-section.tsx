@@ -94,7 +94,7 @@ export default function HeroSection() {
           </div>
 
           {/* Inline CTA Panel (from former CTASection) */}
-          <div className="relative overflow-hidden rounded-2xl bg-linear-to-br from-primary via-primary/90 to-accent p-8 md:p-10 text-center mx-auto max-w-4xl shadow-xl aos-zoom-in">
+          <div className="relative overflow-hidden rounded-2xl bg-linear-to-br from-primary via-primary/90 to-accent p-8 md:p-10 text-center mx-auto max-w-4xl shadow-xl ">
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-0 right-0 w-80 h-80 bg-white rounded-full blur-3xl"></div>
             </div>
