@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react"
 
 const stats = [
-  { label: "Shipments Cleared", value: "5,000+" },
-  { label: "Years of Experience", value: "15+" },
+  { label: "Shipments Cleared", value: "1.1M+" },
+  { label: "Years of Experience", value: "5+" },
   { label: "Client Satisfaction", value: "98%" },
-  { label: "Average Clearance Time", value: "24hrs" },
+  { label: "Average Clearance Time", value: "4hours" },
 ]
 
 export default function StatsSection() {
@@ -50,7 +50,7 @@ export default function StatsSection() {
               className={`text-center p-6 aos-fade-up ${isVisible ? 'aos-animate' : ''}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
+              <div className="text-4xl lg:text-5xl font-bold bg-linear-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
                 {stat.value}
               </div>
               <p className="text-foreground/60 font-medium">{stat.label}</p>

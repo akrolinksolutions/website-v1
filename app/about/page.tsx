@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import AboutHero from "@/components/about/about-hero"
 import MissionVision from "@/components/about/mission-vision"
-import TeamSection from "@/components/about/team-section"
 import StatsSection from "@/components/about/stats-section"
 
 export const metadata: Metadata = {
@@ -41,7 +40,6 @@ export default function About() {
       <AboutHero />
       <MissionVision />
       <StatsSection />
-      <TeamSection />
     </main>
   )
 }

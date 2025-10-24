@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 import Logo from "@/public/logo.png";
 import Image from "next/image";
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { label: "Home", href: "/" },
@@ -33,15 +35,25 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-sm"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`relative px-3 py-2 rounded-lg transition-all duration-300 font-medium text-sm ${
+                    isActive
+                      ? "text-primary bg-primary/10 border border-primary/20"
+                      : "text-foreground hover:text-primary hover:bg-primary/5"
+                  }`}
+                >
+                  {item.label}
+                  {isActive && (
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
           {/* CTA Button */}
@@ -66,16 +78,23 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden pb-4 animate-fade-in-up">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`block px-4 py-3 rounded-lg transition-all duration-300 font-medium ${
+                    isActive
+                      ? "text-primary bg-primary/10 border-l-4 border-primary"
+                      : "text-foreground hover:bg-muted hover:text-primary"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
             <Link
               href="/contact"
               className="block px-4 py-2 mt-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-center font-medium"
