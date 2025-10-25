@@ -5,23 +5,25 @@ import ProcessSection from "@/components/services/process-section"
 import BenefitsSection from "@/components/services/benefits-section"
 
 export const metadata: Metadata = {
-  title: "CFL Customs Clearance Services at Heathrow Airport",
-  description: "Comprehensive CFL customs clearance services at Heathrow Airport. Expert HS code classification, duty optimization, CDS submissions, and UK Border Force coordination for air courier shipments.",
+  title: "UK Customs Broker Services - Heathrow CFL Clearance | Akrolink Solutions",
+  description: "Professional UK import clearance service at Heathrow CFL. Expert customs broker for air courier shipments with HS code classification, duty optimisation, CDS declarations, and UK Border Force coordination.",
   keywords: [
-    "CFL customs clearance services",
-    "Heathrow customs clearance",
-    "air courier customs services",
+    "customs broker Heathrow",
+    "UK import clearance service",
+    "Heathrow customs clearance services",
+    "air courier customs clearance",
     "HS code classification service",
-    "duty optimization services",
-    "CDS import declarations",
-    "UK Border Force coordination",
-    "customs clearance process",
-    "import duty reduction",
-    "HMRC compliance services"
+    "duty optimisation services",
+    "CDS customs declaration UK",
+    "UK Border Force clearance services",
+    "courier customs clearance UK",
+    "import customs agent Heathrow",
+    "UK courier import clearance",
+    "customs declaration Heathrow airport"
   ],
   openGraph: {
-    title: "CFL Customs Clearance Services at Heathrow Airport",
-    description: "Professional customs clearance services for air courier shipments at Heathrow through CFL. Expert HS code classification and duty optimization.",
+    title: "UK Customs Broker Services - Heathrow CFL Clearance | Akrolink Solutions",
+    description: "Professional UK import clearance service at Heathrow CFL. Expert customs broker for air courier shipments with HS code classification and duty optimisation.",
     type: "website",
     images: [
       {

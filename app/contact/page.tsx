@@ -5,21 +5,21 @@ import ContactInfo from "@/components/contact/contact-info"
 import GoogleMap from "@/components/contact/google-map"
 
 export const metadata: Metadata = {
-  title: "Contact Akrolink Solutions - CFL Customs Clearance at Heathrow",
-  description: "Get in touch with Akrolink Solutions for CFL customs clearance services at Heathrow Airport. Expert HS code classification, duty optimization, and UK Border Force coordination.",
+  title: "Contact Us - UK Customs Broker Heathrow | Akrolink Solutions",
+  description: "Contact Akrolink Solutions for professional UK customs broker services at Heathrow CFL. Expert HS code classification, duty optimisation, and UK Border Force clearance services.",
   keywords: [
     "contact akrolink solutions",
-    "CFL customs clearance contact",
+    "customs broker contact Heathrow",
+    "UK import clearance service contact",
     "Heathrow customs clearance contact",
-    "customs broker contact",
     "HS code classification contact",
-    "duty optimization contact",
-    "UK customs services contact",
+    "duty optimisation contact",
+    "UK customs broker near me",
     "air courier customs contact"
   ],
   openGraph: {
-    title: "Contact Akrolink Solutions - CFL Customs Clearance at Heathrow",
-    description: "Contact us for specialized customs clearance services for air courier shipments at Heathrow Airport through CFL.",
+    title: "Contact Us - UK Customs Broker Heathrow | Akrolink Solutions",
+    description: "Contact us for professional UK customs broker services for air courier shipments at Heathrow CFL with duty optimisation.",
     type: "website",
     images: [
       {
@@ -39,13 +39,13 @@ export default function Contact() {
   return (
     <main className="pt-16">
       <ContactHero />
+      <ContactInfo />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           <div className="lg:col-span-2">
             <ContactForm />
           </div>
-          <div className="space-y-8">
-            <ContactInfo />
+          <div className="h-full">
             <GoogleMap />
           </div>
         </div>

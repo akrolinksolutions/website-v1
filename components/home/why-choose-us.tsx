@@ -6,27 +6,27 @@ import { useEffect, useState } from "react";
 const reasons = [
   {
     icon: Zap,
-    title: "CFL Specialists",
+    title: "CFL Customs Clearance Specialist Heathrow",
     description:
-      "Dedicated expertise in CFL customs clearance at Heathrow with technology-enabled processes for fast, accurate processing.",
+      "Dedicated expertise in CFL customs clearance at Heathrow with technology-enabled processes for fast, accurate processing of air courier shipments.",
   },
   {
     icon: TrendingUp,
-    title: "Duty & Cost Optimization",
+    title: "Duty & Cost Optimisation for UK Imports",
     description:
-      "We identify the most accurate and cost-effective HS codes, minimizing import duties and taxes wherever ethically possible.",
+      "We identify the most accurate and cost-effective HS codes for UK imports, minimizing import duties and taxes wherever ethically possible through expert classification.",
   },
   {
     icon: Shield,
-    title: "UK Customs Experts",
+    title: "UK Customs Broker Experts",
     description:
-      "In-depth knowledge of UK customs regulations, import duty structures, and commodity classification for seamless clearance.",
+      "In-depth knowledge of UK customs regulations, import duty structures, and commodity classification for seamless clearance of courier shipments at Heathrow.",
   },
   {
     icon: Smile,
-    title: "Hassle-Free Experience",
+    title: "Hassle-Free UK Import Clearance",
     description:
-      "We handle every step from documentation to UK Border Force coordination, ensuring your shipments clear customs smoothly and at the lowest possible cost.",
+      "We handle every step from CDS customs declaration to UK Border Force coordination, ensuring your courier shipments clear customs smoothly and at the lowest possible cost.",
   },
 ];
 
@@ -42,12 +42,12 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Why Choose Akrolink Solutions
+            Why Choose Akrolink Solutions - UK Customs Broker
           </h2>
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
             We combine CFL expertise, technology-enabled processes, and
-            experienced agents to deliver hassle-free customs clearance at
-            Heathrow
+            experienced UK customs broker agents to deliver hassle-free customs clearance at
+            Heathrow for air courier shipments
           </p>
         </div>
 
@@ -57,9 +57,8 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className={`flex gap-6 p-8 bg-card rounded-xl border border-border hover:border-accent transition-all duration-300 ${
-                  isLoaded ? "animate-fade-in-up" : "opacity-0"
-                }`}
+                className={`flex gap-6 p-8 bg-card rounded-xl border border-border hover:border-accent transition-all duration-300 ${isLoaded ? "animate-fade-in-up" : "opacity-0"
+                  }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="shrink-0">

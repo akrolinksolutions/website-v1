@@ -36,7 +36,7 @@ export default function QuoteHero() {
 
   return (
     <section ref={sectionRef} className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-linear-to-br from-background via-background to-primary/5 pt-20">
-      
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
@@ -55,8 +55,8 @@ export default function QuoteHero() {
             </span>
           </h1>
           <p className="text-xl text-foreground/80 leading-relaxed max-w-4xl mx-auto mb-8">
-            Ready to optimize your customs clearance costs? Get a detailed quote for your CFL shipment
-            processing at Heathrow Airport. Our experts will provide accurate pricing and duty optimization recommendations.
+            Ready to optimize your UK import clearance costs? Get a detailed quote for your courier shipment
+            processing at Heathrow CFL. Our expert UK customs broker team will provide accurate pricing and duty optimisation recommendations.
           </p>
 
           {/* Quote highlights */}
@@ -66,7 +66,7 @@ export default function QuoteHero() {
                 <span className="text-2xl">💰</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Cost Transparency</h3>
-              <p className="text-sm text-foreground/70">Detailed breakdown of all fees and duties</p>
+              <p className="text-sm text-foreground/70">Detailed breakdown of UK import clearance fees and duties</p>
             </div>
 
             <div className="bg-background/80 backdrop-blur-md rounded-xl p-6 border border-border/50 shadow-lg">
@@ -74,14 +74,14 @@ export default function QuoteHero() {
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Quick Response</h3>
-              <p className="text-sm text-foreground/70">Quote delivered within 24 hours</p>
+              <p className="text-sm text-foreground/70">Customs clearance quote delivered within 24 hours</p>
             </div>
 
             <div className="bg-background/80 backdrop-blur-md rounded-xl p-6 border border-border/50 shadow-lg">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Duty Optimization</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Duty Optimisation for UK Imports</h3>
               <p className="text-sm text-foreground/70">Expert HS code classification included</p>
             </div>
           </div>

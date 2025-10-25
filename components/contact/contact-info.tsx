@@ -62,30 +62,32 @@ export default function ContactInfo() {
   }, [])
 
   return (
-    <div ref={sectionRef} className={`aos-fade-right ${isVisible ? 'aos-animate' : ''}`}>
+    <div ref={sectionRef} className={`aos-fade-right max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 ${isVisible ? 'aos-animate' : ''}`}>
       <h2 className="text-3xl font-bold text-foreground mb-8">Contact Information</h2>
 
-      <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
         {contactDetails.map((detail, index) => {
           const Icon = detail.icon
+          const Component = detail.href !== "#" ? "a" : "div"
+
           return (
-            <a
+            <Component
               key={index}
-              href={detail.href}
-              className="flex gap-4 p-6 bg-card rounded-xl border border-border hover:border-accent hover:shadow-lg transition-all duration-300 group"
+              href={detail.href !== "#" ? detail.href : undefined}
+              className={`flex flex-col items-center justify-center p-6 bg-card rounded-xl border border-border hover:border-accent hover:shadow-lg transition-all duration-300 group text-center h-full ${detail.href === "#" ? "cursor-default" : "cursor-pointer"}`}
             >
-              <div className="shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-linear-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-all">
-                  <Icon size={24} className="text-primary" />
+              <div className="mb-3">
+                <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-linear-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-all">
+                  <Icon size={28} className="text-primary" />
                 </div>
               </div>
-              <div>
-                <p className="text-sm font-medium text-foreground/60">{detail.label}</p>
-                <p className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+              <div className="w-full">
+                <p className="text-xs font-medium text-foreground/60 uppercase tracking-wide mb-1">{detail.label}</p>
+                <p className={`text-sm font-semibold text-foreground leading-tight ${detail.href !== "#" ? "group-hover:text-primary" : ""} transition-colors`}>
                   {detail.value}
                 </p>
               </div>
-            </a>
+            </Component>
           )
         })}
       </div>

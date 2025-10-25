@@ -61,20 +61,20 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Welcome To{" "}
+            UK Customs Broker Heathrow{" "}
             <span className="text-primary">
-            Akrolink Solutions
+              - Akrolink Solutions
             </span>
           </h1>
 
           <p className="text-2xl md:text-3xl font-semibold text-foreground/90 mb-4">
-            Fast, reliable customs clearance at Heathrow Airport — with duty optimisation built in.
+            Fast customs clearance at Heathrow Airport with duty optimisation built in.
           </p>
 
           <p className="text-xl text-foreground/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Leading UK customs clearance specialists for air courier shipments at Heathrow Airport through
-            Courier Facility Limited (CFL). We streamline every step from documentation to UK Border Force coordination,
-            ensuring your shipments clear customs quickly, cost-effectively, and with complete peace of mind.
+            Leading UK customs broker for air courier shipments at Heathrow Airport through
+            Courier Facility Limited (CFL). We streamline every step from customs declaration to UK Border Force coordination,
+            ensuring your courier shipments clear customs quickly, cost-effectively, and with complete peace of mind.
           </p>
 
           {/* Inline CTA Panel (from former CTASection) */}

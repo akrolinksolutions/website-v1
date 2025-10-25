@@ -54,16 +54,15 @@ export default function AboutHero() {
         <div className={`aos-fade-up ${isVisible ? "aos-animate" : ""}`}>
           <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
             About{" "}
-            <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-primary">
               Akrolink Solutions
             </span>
           </h1>
           <p className="text-xl text-foreground/80 leading-relaxed max-w-4xl mx-auto mb-8">
-            We specialize in Customs Clearance services for air courier
-            shipments arriving at Heathrow Airport, processed through Courier
+            We specialize in UK customs broker services for air courier shipments arriving at Heathrow Airport, processed through Courier
             Facility Limited (CFL). As a dedicated UK customs broker, we handle
-            every step of the import clearance process with in-depth knowledge
-            of UK customs regulations and duty structures.
+            every step of the import clearance process with expert knowledge
+            of UK customs regulations, import duty structures, and HS code classification for duty optimisation.
           </p>
 
           {/* Key highlights */}
@@ -73,10 +72,10 @@ export default function AboutHero() {
                 <span className="text-2xl">🏢</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Established Expertise
+                UK Customs Broker Expertise
               </h3>
               <p className="text-sm text-foreground/70">
-                Years of specialized experience in CFL customs clearance
+                Years of specialized experience in CFL customs clearance at Heathrow
               </p>
             </div>
 
@@ -85,10 +84,10 @@ export default function AboutHero() {
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Fast Processing
+                Fast UK Import Clearance
               </h3>
               <p className="text-sm text-foreground/70">
-                Streamlined processes for quick customs clearance
+                Streamlined processes for quick customs clearance at Heathrow
               </p>
             </div>
 
@@ -97,10 +96,10 @@ export default function AboutHero() {
                 <span className="text-2xl">🎯</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Duty Optimization
+                Duty Optimisation for UK Imports
               </h3>
               <p className="text-sm text-foreground/70">
-                Expert HS code classification for optimal duty rates
+                Expert HS code classification for optimal duty rates on courier shipments
               </p>
             </div>
           </div>

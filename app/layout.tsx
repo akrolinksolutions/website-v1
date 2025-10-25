@@ -22,27 +22,30 @@ const _geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Akrolink Solutions - CFL Customs Clearance at Heathrow Airport",
+    default: "Fast Customs Clearance at Heathrow (CFL) | Akrolink Solutions – UK Customs Broker",
     template: "%s | Akrolink Solutions"
   },
   description:
-    "Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL. Expert HS code classification, duty optimization, and UK Border Force coordination. Fast, accurate, cost-effective customs clearance.",
+    "Akrolink Solutions offers reliable customs clearance services for air courier shipments at Heathrow Airport. We handle all paperwork, HS code classification, and import duty optimisation.",
   keywords: [
+    "customs clearance Heathrow",
+    "UK customs broker Heathrow",
+    "courier customs clearance UK",
+    "air courier customs clearance",
+    "CFL Heathrow customs clearance",
+    "import customs agent Heathrow",
+    "UK import clearance service",
+    "customs declaration Heathrow airport",
+    "UK courier import clearance",
+    "CDS customs declaration UK",
     "CFL customs clearance",
     "Heathrow customs clearance",
-    "air courier customs",
-    "UK customs broker",
     "HS code classification",
     "duty optimization",
     "CDS import declarations",
     "UK Border Force",
-    "customs clearance Heathrow",
-    "CFL shipments",
-    "import duty reduction",
-    "UK customs regulations",
     "HMRC compliance",
-    "customs clearance services",
-    "international shipping UK"
+    "customs clearance services"
   ],
   authors: [{ name: "Akrolink Solutions" }],
   creator: "Akrolink Solutions",
@@ -61,8 +64,8 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: 'https://akrolinksolutions.com',
     siteName: 'Akrolink Solutions',
-    title: 'Akrolink Solutions - CFL Customs Clearance at Heathrow Airport',
-    description: 'Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL. Expert HS code classification and duty optimization.',
+    title: 'Fast Customs Clearance at Heathrow (CFL) | Akrolink Solutions – UK Customs Broker',
+    description: 'Akrolink Solutions offers reliable customs clearance services for air courier shipments at Heathrow Airport. We handle all paperwork, HS code classification, and import duty optimisation.',
     images: [
       {
         url: '/customs-clearance-logistics-warehouse-heathrow.jpg',
@@ -80,8 +83,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Akrolink Solutions - CFL Customs Clearance at Heathrow',
-    description: 'Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL.',
+    title: 'Fast Customs Clearance at Heathrow (CFL) | Akrolink Solutions – UK Customs Broker',
+    description: 'Akrolink Solutions offers reliable customs clearance services for air courier shipments at Heathrow Airport. We handle all paperwork, HS code classification, and import duty optimisation.',
     images: ['/customs-clearance-logistics-warehouse-heathrow.jpg', '/logoWithBg.png'],
   },
   robots: {

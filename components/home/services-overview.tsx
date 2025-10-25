@@ -7,21 +7,21 @@ import { useRouter } from "next/navigation";
 const services = [
   {
     icon: FileText,
-    title: "Custom Clearance using CDS",
+    title: "CDS Customs Declaration UK",
     description:
-      "We handle the full import declaration through UK’s CDS system so your courier shipment clears without delay.",
+      "We handle the full customs declaration through UK's CDS system so your courier shipment clears without delay at Heathrow Airport.",
   },
   {
     icon: Zap,
-    title: "HS Code Classification",
+    title: "HS Code Classification & Duty Optimisation",
     description:
-      "We analyse your product, assign the optimal HS code, and make sure you pay the lowest ethically-valid duty on arrival.",
+      "Expert HS code classification for UK imports. We analyse your product, assign the optimal HS code, and ensure you pay the lowest valid duty on arrival.",
   },
   {
     icon: Users,
-    title: "Border Force Coordination",
+    title: "UK Border Force Clearance Services",
     description:
-      "We liaise directly with UK Border Force & CFL at Heathrow to manage inspections, release and paperwork — so you don’t get stuck.",
+      "We liaise directly with UK Border Force & CFL at Heathrow to manage inspections, release and paperwork — so your courier shipment clears quickly.",
   },
   {
     icon: Ban,
@@ -106,16 +106,14 @@ export default function ServicesOverview() {
           className={`text-center mb-16 ${isVisibleDiv ? "aos-animate" : ""}`}
         >
           <h2
-            className={`aos-fade-up ${
-              isVisibleDiv ? "aos-animate" : ""
-            } text-4xl lg:text-5xl font-bold text-foreground mb-4`}
+            className={`aos-fade-up ${isVisibleDiv ? "aos-animate" : ""
+              } text-4xl lg:text-5xl font-bold text-foreground mb-4`}
           >
             Our Services
           </h2>
           <p
-            className={`aos-fade-up ${
-              isVisibleDiv ? "aos-animate" : ""
-            } aos-delay-200 text-lg text-foreground/60 max-w-2xl mx-auto`}
+            className={`aos-fade-up ${isVisibleDiv ? "aos-animate" : ""
+              } aos-delay-200 text-lg text-foreground/60 max-w-2xl mx-auto`}
           >
             Specialized customs clearance services for CFL shipments at Heathrow
             Airport, designed to minimize costs and maximize efficiency
@@ -137,9 +135,8 @@ export default function ServicesOverview() {
                 ref={(el) => {
                   itemRefs.current[index] = el;
                 }}
-                className={`group p-6 bg-card rounded-xl border border-border hover-lift transition-all duration-300 ${
-                  isAnimated ? "aos-fade-up aos-animate" : "aos-fade-up"
-                } ${isLastItem ? "cursor-pointer" : ""}`}
+                className={`group p-6 bg-card rounded-xl border border-border hover-lift transition-all duration-300 ${isAnimated ? "aos-fade-up aos-animate" : "aos-fade-up"
+                  } ${isLastItem ? "cursor-pointer" : ""}`}
                 style={{
                   transitionDelay: `${index * 100}ms`,
                 }}
@@ -159,9 +156,8 @@ export default function ServicesOverview() {
                   {service.title}
                 </h3>
                 <p
-                  className={`text-foreground/60 text-sm leading-relaxed group-hover:text-foreground/80 transition-colors duration-300${
-                    isLastItem ? "cursor-pointer underline" : ""
-                  }`}
+                  className={`text-foreground/60 text-sm leading-relaxed group-hover:text-foreground/80 transition-colors duration-300${isLastItem ? "cursor-pointer underline" : ""
+                    }`}
                 >
                   {service.description}
                 </p>

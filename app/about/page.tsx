@@ -4,23 +4,23 @@ import MissionVision from "@/components/about/mission-vision";
 import StatsSection from "@/components/about/stats-section";
 
 export const metadata: Metadata = {
-  title: "About Akrolink Solutions - CFL Customs Clearance Experts",
+  title: "About Us - UK Customs Broker Heathrow | Akrolink Solutions",
   description:
-    "Learn about Akrolink Solutions, specialized customs clearance experts for air courier shipments at Heathrow Airport through CFL. Our team provides hassle-free customs clearance with duty optimization.",
+    "Learn about Akrolink Solutions, expert UK customs broker for air courier shipments at Heathrow CFL. Our team provides hassle-free customs clearance with duty optimisation and HS code classification.",
   keywords: [
     "about akrolink solutions",
-    "CFL customs clearance experts",
-    "Heathrow customs specialists",
     "UK customs broker team",
+    "Heathrow customs specialists",
     "customs clearance company",
     "air courier customs experts",
     "HS code classification specialists",
-    "duty optimization experts",
+    "duty optimisation experts",
+    "CFL customs clearance experts",
   ],
   openGraph: {
-    title: "About Akrolink Solutions - CFL Customs Clearance Experts",
+    title: "About Us - UK Customs Broker Heathrow | Akrolink Solutions",
     description:
-      "Learn about our specialized customs clearance services for air courier shipments at Heathrow Airport through CFL.",
+      "Learn about our expert UK customs broker services for air courier shipments at Heathrow CFL with duty optimisation.",
     type: "website",
     images: [
       {

@@ -37,7 +37,7 @@ export default function ContactHero() {
   return (
     <section ref={sectionRef} className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-linear-to-br from-background via-background to-primary/5 pt-20">
       {/* Company Branding */}
-     
+
 
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -52,13 +52,13 @@ export default function ContactHero() {
         <div className={`aos-fade-up ${isVisible ? 'aos-animate' : ''}`}>
           <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
             Get in{" "}
-            <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-primary">
               Touch
             </span>
           </h1>
           <p className="text-xl text-foreground/80 leading-relaxed max-w-4xl mx-auto mb-8">
-            Have questions about our CFL customs clearance services? We'd love to hear from you.
-            Contact us today for a free consultation and let us help streamline your customs clearance process.
+            Have questions about our UK customs broker services at Heathrow CFL? We'd love to hear from you.
+            Contact us today for a free consultation and let us help streamline your UK import clearance process.
           </p>
 
           {/* Contact highlights */}
@@ -68,7 +68,7 @@ export default function ContactHero() {
                 <span className="text-2xl">💬</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Free Consultation</h3>
-              <p className="text-sm text-foreground/70">Get expert advice on your customs clearance needs</p>
+              <p className="text-sm text-foreground/70">Get expert UK customs broker advice on your clearance needs</p>
             </div>
 
             <div className="bg-background/80 backdrop-blur-md rounded-xl p-6 border border-border/50 shadow-lg">
@@ -76,15 +76,15 @@ export default function ContactHero() {
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Quick Response</h3>
-              <p className="text-sm text-foreground/70">Fast turnaround on all inquiries and quotes</p>
+              <p className="text-sm text-foreground/70">Fast turnaround on all UK import clearance inquiries</p>
             </div>
 
             <div className="bg-background/80 backdrop-blur-md rounded-xl p-6 border border-border/50 shadow-lg">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">CFL Specialists</h3>
-              <p className="text-sm text-foreground/70">Dedicated support for Heathrow CFL operations</p>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Duty Optimisation for UK Imports</h3>
+              <p className="text-sm text-foreground/70"> Expert HS code classification for optimal duty rates</p>
             </div>
           </div>
         </div>

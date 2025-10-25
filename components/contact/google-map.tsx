@@ -36,13 +36,13 @@ export default function GoogleMap() {
   return (
     <div
       ref={sectionRef}
-      className={`aos-fade-up ${isVisible ? "aos-animate" : ""}`}
+      className={`aos-fade-up h-full flex flex-col ${isVisible ? "aos-animate" : ""}`}
     >
       <h3 className="text-xl font-semibold text-foreground mb-4">
         Our Location
       </h3>
-      <div className="bg-card border border-border rounded-xl overflow-hidden shadow-lg">
-        <div className="h-64 md:h-80">
+      <div className="bg-card border border-border rounded-xl overflow-hidden shadow-lg flex-1 flex flex-col">
+        <div className="flex-1 min-h-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8988!2d-0.1427!3d51.5194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2b8a8a8a8a%3A0x8a8a8a8a8a8a8a8a!2s167-169%20Great%20Portland%20St%2C%20London%20W1W%205PF%2C%20UK!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk"
             width="100%"
@@ -55,7 +55,7 @@ export default function GoogleMap() {
             className="rounded-xl"
           ></iframe>
         </div>
-        <div className="p-4">
+        <div className="p-4 flex-shrink-0">
           <h4 className="font-semibold text-foreground mb-2">
             Akrolink Solutions
           </h4>

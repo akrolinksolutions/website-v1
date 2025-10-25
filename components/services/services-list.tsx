@@ -6,42 +6,42 @@ import { Plane, FileText, Zap, Users, Package, Shield } from "lucide-react"
 const services = [
   {
     icon: Plane,
-    title: "CFL Customs Clearance Services",
+    title: "Customs Clearance Heathrow CFL",
     description:
-      "Specialized customs clearance for air courier shipments arriving at Heathrow through CFL. We handle every step from documentation to UK Border Force coordination, ensuring quick and accurate clearance.",
+      "Professional customs clearance for air courier shipments arriving at Heathrow through CFL. We handle every step from customs declaration to UK Border Force coordination, ensuring quick and accurate clearance.",
     features: ["CFL specialist", "Priority processing", "Heathrow expertise"],
   },
   {
     icon: FileText,
-    title: "Import Documentation & CDS",
+    title: "CDS Customs Declaration UK",
     description:
-      "Preparation and submission of import declarations (CDS) to HMRC with full compliance. Our team has in-depth knowledge of UK customs regulations and import duty structures.",
+      "Preparation and submission of CDS customs declarations to HMRC with full compliance. Our team has in-depth knowledge of UK customs regulations and import duty structures for courier shipments.",
     features: ["HMRC compliant", "CFL documentation", "Full compliance"],
   },
   {
     icon: Zap,
-    title: "HS Code Classification & Duty Optimization",
+    title: "HS Code Classification & Duty Optimisation",
     description:
-      "Expert HS code classification to achieve the most accurate and cost-effective duty rates. We help identify the most favorable classification while ensuring compliance and minimizing import duties.",
-    features: ["Cost reduction", "Expert classification", "Duty optimization"],
+      "Expert HS code classification for UK imports to achieve the most accurate and cost-effective duty rates. We help identify the most favorable classification while ensuring compliance and minimizing import duties.",
+    features: ["Cost reduction", "Expert classification", "Duty optimisation"],
   },
   {
     icon: Users,
-    title: "UK Border Force Coordination",
+    title: "UK Border Force Clearance Services",
     description:
-      "Direct coordination with UK Border Force and CFL for seamless customs clearance. We handle all communications to ensure your shipments clear customs smoothly at Heathrow.",
+      "Direct coordination with UK Border Force and CFL for seamless customs clearance. We handle all communications to ensure your courier shipments clear customs smoothly at Heathrow.",
     features: ["Border Force liaison", "CFL coordination", "Quick resolution"],
   },
   {
     icon: Package,
-    title: "Air Courier Shipment Processing",
+    title: "UK Courier Import Clearance",
     description:
-      "Specialized handling of air courier shipments through CFL at Heathrow. We understand the unique requirements of courier shipments and ensure efficient processing.",
+      "Specialized handling of UK courier import clearance through CFL at Heathrow. We understand the unique requirements of air courier customs clearance and ensure efficient processing.",
     features: ["Courier expertise", "CFL processing", "Fast clearance"],
   },
   {
     icon: Shield,
-    title: "Compliance & Duty Guidance",
+    title: "Import Duty & VAT Guidance UK",
     description:
       "Comprehensive duty, VAT, and compliance guidance for CFL shipments. We provide expert advice on UK customs regulations and help minimize costs while maintaining compliance.",
     features: ["Expert guidance", "Cost minimization", "Regulatory compliance"],

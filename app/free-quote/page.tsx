@@ -4,20 +4,21 @@ import QuoteForm from "@/components/contact/quote-form"
 import ContactInfo from "@/components/contact/contact-info"
 
 export const metadata: Metadata = {
-  title: "Free Quote - CFL Customs Clearance at Heathrow | Akrolink Solutions",
-  description: "Get a free quote for CFL customs clearance services at Heathrow Airport. Expert duty optimization and HS code classification for air courier shipments.",
+  title: "Request Customs Clearance Quote - UK Customs Broker | Akrolink Solutions",
+  description: "Get a free quote for UK customs clearance services at Heathrow CFL. Expert customs broker with duty optimisation and HS code classification for air courier shipments.",
   keywords: [
-    "free quote customs clearance",
-    "CFL customs clearance quote",
+    "customs clearance quote UK",
+    "UK customs broker quote",
     "Heathrow customs clearance quote",
-    "customs clearance pricing",
-    "duty optimization quote",
+    "import clearance service quote",
+    "duty optimisation quote",
     "HS code classification quote",
-    "air courier customs quote"
+    "courier customs clearance quote",
+    "request customs clearance quote UK"
   ],
   openGraph: {
-    title: "Free Quote - CFL Customs Clearance at Heathrow",
-    description: "Get a detailed quote for your CFL customs clearance needs at Heathrow Airport with duty optimization.",
+    title: "Request Customs Clearance Quote - UK Customs Broker | Akrolink Solutions",
+    description: "Get a detailed quote for your UK customs clearance needs at Heathrow CFL with duty optimisation from our expert customs broker.",
     type: "website",
     images: [
       {
