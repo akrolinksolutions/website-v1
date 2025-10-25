@@ -1,11 +1,12 @@
-import type { Metadata } from "next"
-import AboutHero from "@/components/about/about-hero"
-import MissionVision from "@/components/about/mission-vision"
-import StatsSection from "@/components/about/stats-section"
+import type { Metadata } from "next";
+import AboutHero from "@/components/about/about-hero";
+import MissionVision from "@/components/about/mission-vision";
+import StatsSection from "@/components/about/stats-section";
 
 export const metadata: Metadata = {
-  title: "About Akrolink Solutions Limited - CFL Customs Clearance Experts",
-  description: "Learn about Akrolink Solutions Limited, specialized customs clearance experts for air courier shipments at Heathrow Airport through CFL. Our team provides hassle-free customs clearance with duty optimization.",
+  title: "About Akrolink Solutions - CFL Customs Clearance Experts",
+  description:
+    "Learn about Akrolink Solutions, specialized customs clearance experts for air courier shipments at Heathrow Airport through CFL. Our team provides hassle-free customs clearance with duty optimization.",
   keywords: [
     "about akrolink solutions",
     "CFL customs clearance experts",
@@ -14,11 +15,12 @@ export const metadata: Metadata = {
     "customs clearance company",
     "air courier customs experts",
     "HS code classification specialists",
-    "duty optimization experts"
+    "duty optimization experts",
   ],
   openGraph: {
-    title: "About Akrolink Solutions Limited - CFL Customs Clearance Experts",
-    description: "Learn about our specialized customs clearance services for air courier shipments at Heathrow Airport through CFL.",
+    title: "About Akrolink Solutions - CFL Customs Clearance Experts",
+    description:
+      "Learn about our specialized customs clearance services for air courier shipments at Heathrow Airport through CFL.",
     type: "website",
     images: [
       {
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/about",
   },
-}
+};
 
 export default function About() {
   return (
@@ -41,5 +43,5 @@ export default function About() {
       <MissionVision />
       <StatsSection />
     </main>
-  )
+  );
 }

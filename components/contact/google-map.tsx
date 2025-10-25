@@ -1,41 +1,46 @@
-"use client"
+"use client";
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react";
 
 export default function GoogleMap() {
-  const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(true)
-            observer.unobserve(entry.target)
+            setIsVisible(true);
+            observer.unobserve(entry.target);
           }
-        })
+        });
       },
       {
         threshold: 0.2,
-        rootMargin: "0px 0px -50px 0px"
+        rootMargin: "0px 0px -50px 0px",
       }
-    )
+    );
 
     if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+      observer.observe(sectionRef.current);
     }
 
     return () => {
       if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
+        observer.unobserve(sectionRef.current);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
-    <div ref={sectionRef} className={`aos-fade-up ${isVisible ? 'aos-animate' : ''}`}>
-      <h3 className="text-xl font-semibold text-foreground mb-4">Our Location</h3>
+    <div
+      ref={sectionRef}
+      className={`aos-fade-up ${isVisible ? "aos-animate" : ""}`}
+    >
+      <h3 className="text-xl font-semibold text-foreground mb-4">
+        Our Location
+      </h3>
       <div className="bg-card border border-border rounded-xl overflow-hidden shadow-lg">
         <div className="h-64 md:h-80">
           <iframe
@@ -51,7 +56,9 @@ export default function GoogleMap() {
           ></iframe>
         </div>
         <div className="p-4">
-          <h4 className="font-semibold text-foreground mb-2">Akrolink Solutions Limited</h4>
+          <h4 className="font-semibold text-foreground mb-2">
+            Akrolink Solutions
+          </h4>
           <p className="text-sm text-foreground/70 mb-2">
             167-169 Great Portland Street, 5th Floor
           </p>
@@ -69,5 +76,5 @@ export default function GoogleMap() {
         </div>
       </div>
     </div>
-  )
+  );
 }

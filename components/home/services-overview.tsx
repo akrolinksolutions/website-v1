@@ -15,7 +15,7 @@ const services = [
     icon: Zap,
     title: "HS Code Classification",
     description:
-      "We analyse your product, assign the optimal HS code, and make sure you pay the lowest legally-valid duty on arrival.",
+      "We analyse your product, assign the optimal HS code, and make sure you pay the lowest ethically-valid duty on arrival.",
   },
   {
     icon: Users,
@@ -99,7 +99,7 @@ export default function ServicesOverview() {
     };
   }, []);
   return (
-    <section className="py-20 bg-background">
+    <section className="pb-20 pt-0 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={divRef}

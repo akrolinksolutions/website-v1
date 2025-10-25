@@ -22,8 +22,8 @@ const _geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Akrolink Solutions Limited - CFL Customs Clearance at Heathrow Airport",
-    template: "%s | Akrolink Solutions Limited"
+    default: "Akrolink Solutions - CFL Customs Clearance at Heathrow Airport",
+    template: "%s | Akrolink Solutions"
   },
   description:
     "Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL. Expert HS code classification, duty optimization, and UK Border Force coordination. Fast, accurate, cost-effective customs clearance.",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     "customs clearance services",
     "international shipping UK"
   ],
-  authors: [{ name: "Akrolink Solutions Limited" }],
-  creator: "Akrolink Solutions Limited",
-  publisher: "Akrolink Solutions Limited",
+  authors: [{ name: "Akrolink Solutions" }],
+  creator: "Akrolink Solutions",
+  publisher: "Akrolink Solutions",
   formatDetection: {
     email: false,
     address: false,
@@ -60,8 +60,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     url: 'https://akrolinksolutions.com',
-    siteName: 'Akrolink Solutions Limited',
-    title: 'Akrolink Solutions Limited - CFL Customs Clearance at Heathrow Airport',
+    siteName: 'Akrolink Solutions',
+    title: 'Akrolink Solutions - CFL Customs Clearance at Heathrow Airport',
     description: 'Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL. Expert HS code classification and duty optimization.',
     images: [
       {
@@ -74,13 +74,13 @@ export const metadata: Metadata = {
         url: '/logoWithBg.png',
         width: 512,
         height: 512,
-        alt: 'Akrolink Solutions Limited Logo',
+        alt: 'Akrolink Solutions Logo',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Akrolink Solutions Limited - CFL Customs Clearance at Heathrow',
+    title: 'Akrolink Solutions - CFL Customs Clearance at Heathrow',
     description: 'Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL.',
     images: ['/customs-clearance-logistics-warehouse-heathrow.jpg', '/logoWithBg.png'],
   },
@@ -111,7 +111,7 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Akrolink Solutions Limited",
+    "name": "Akrolink Solutions",
     "description": "Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL",
     "url": "https://akrolinksolutions.com",
     "logo": "https://akrolinksolutions.com/logoWithBg.png",

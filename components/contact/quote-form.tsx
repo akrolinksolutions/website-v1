@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useEffect, useRef, useState } from "react"
+import type React from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function QuoteForm() {
   const [formData, setFormData] = useState({
@@ -10,92 +10,108 @@ export default function QuoteForm() {
     phone: "",
     company: "",
     shipmentType: "",
+    noOfShipments: "",
     originCountry: "",
     destinationCountry: "",
     goodsDescription: "",
     estimatedValue: "",
     urgency: "",
     additionalInfo: "",
-  })
+  });
 
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
-    }))
-  }
+    }));
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
+    setIsSubmitting(true);
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      setSubmitStatus("success")
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      setSubmitStatus("success");
       setFormData({
         name: "",
         email: "",
         phone: "",
         company: "",
         shipmentType: "",
+        noOfShipments: "",
         originCountry: "",
-        destinationCountry: "",
+        destinationCountry: "United Kingdom",
         goodsDescription: "",
         estimatedValue: "",
         urgency: "",
         additionalInfo: "",
-      })
-      setTimeout(() => setSubmitStatus("idle"), 3000)
+      });
+      setTimeout(() => setSubmitStatus("idle"), 3000);
     } catch (error) {
-      setSubmitStatus("error")
-      setTimeout(() => setSubmitStatus("idle"), 3000)
+      setSubmitStatus("error");
+      setTimeout(() => setSubmitStatus("idle"), 3000);
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
-  }
+  };
 
-  const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(true)
-            observer.unobserve(entry.target)
+            setIsVisible(true);
+            observer.unobserve(entry.target);
           }
-        })
+        });
       },
       {
         threshold: 0.2,
-        rootMargin: "0px 0px -50px 0px"
+        rootMargin: "0px 0px -50px 0px",
       }
-    )
+    );
 
     if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+      observer.observe(sectionRef.current);
     }
 
     return () => {
       if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
+        observer.unobserve(sectionRef.current);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
-    <div ref={sectionRef} className={`aos-fade-left ${isVisible ? 'aos-animate' : ''}`}>
-      <h2 className="text-3xl font-bold text-foreground mb-8">Get Your Free Quote</h2>
+    <div
+      ref={sectionRef}
+      className={`aos-fade-left ${isVisible ? "aos-animate" : ""}`}
+    >
+      <h2 className="text-3xl font-bold text-foreground mb-8">
+        Get Your Free Quote
+      </h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Name */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
               Full Name *
             </label>
             <input
@@ -112,7 +128,10 @@ export default function QuoteForm() {
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
               Email Address *
             </label>
             <input
@@ -129,7 +148,10 @@ export default function QuoteForm() {
 
           {/* Phone */}
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+            <label
+              htmlFor="phone"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
               Phone Number *
             </label>
             <input
@@ -140,14 +162,17 @@ export default function QuoteForm() {
               onChange={handleChange}
               required
               className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-              placeholder="+91 8100306576 / +91 9136872044"
+              placeholder="+91 1234567890"
             />
           </div>
 
           {/* Company */}
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-              Company Name
+            <label
+              htmlFor="company"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
+              Courier Company Name
             </label>
             <input
               type="text"
@@ -162,7 +187,10 @@ export default function QuoteForm() {
 
           {/* Shipment Type */}
           <div>
-            <label htmlFor="shipmentType" className="block text-sm font-medium text-foreground mb-2">
+            <label
+              htmlFor="shipmentType"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
               Shipment Type *
             </label>
             <select
@@ -174,17 +202,41 @@ export default function QuoteForm() {
               className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
             >
               <option value="">Select shipment type</option>
-              <option value="air-courier">Air Courier (CFL)</option>
-              <option value="sea-freight">Sea Freight</option>
-              <option value="air-freight">Air Freight</option>
-              <option value="express">Express Delivery</option>
-              <option value="other">Other</option>
+              <option value="air-courier">
+                Low Value Goods (Gift below 39 GBP)
+              </option>
+              <option value="sea-freight">
+                High Value Goods (Above 39 GBP)
+              </option>
+              <option value="air-freight">Amazon FBA Goods</option>
+              <option value="express">GSP Goods</option>
+              <option value="other">Goods Requires PVA</option>
             </select>
           </div>
-
+          {/* Number of Packages */}
+          <div>
+            <label
+              htmlFor="shipmentType"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
+              No of Shipments *
+            </label>
+            <input
+              type="number"
+              id="noOfShipments"
+              name="noOfShipments"
+              value={formData.noOfShipments}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+            />
+          </div>
           {/* Origin Country */}
           <div>
-            <label htmlFor="originCountry" className="block text-sm font-medium text-foreground mb-2">
+            <label
+              htmlFor="originCountry"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
               Origin Country *
             </label>
             <input
@@ -201,15 +253,18 @@ export default function QuoteForm() {
 
           {/* Destination Country */}
           <div>
-            <label htmlFor="destinationCountry" className="block text-sm font-medium text-foreground mb-2">
+            <label
+              htmlFor="destinationCountry"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
               Destination Country *
             </label>
             <input
+              readOnly
               type="text"
               id="destinationCountry"
               name="destinationCountry"
               value={formData.destinationCountry}
-              onChange={handleChange}
               required
               className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
               placeholder="United Kingdom"
@@ -218,8 +273,11 @@ export default function QuoteForm() {
 
           {/* Estimated Value */}
           <div>
-            <label htmlFor="estimatedValue" className="block text-sm font-medium text-foreground mb-2">
-              Estimated Value (GBP)
+            <label
+              htmlFor="estimatedValue"
+              className="block text-sm font-medium text-foreground mb-2"
+            >
+              CFL Courier Code
             </label>
             <input
               type="text"
@@ -227,15 +285,19 @@ export default function QuoteForm() {
               name="estimatedValue"
               value={formData.estimatedValue}
               onChange={handleChange}
+              maxLength={3}
               className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-              placeholder="£1,000 - £5,000"
+              placeholder="ABC"
             />
           </div>
         </div>
 
         {/* Goods Description */}
         <div>
-          <label htmlFor="goodsDescription" className="block text-sm font-medium text-foreground mb-2">
+          <label
+            htmlFor="goodsDescription"
+            className="block text-sm font-medium text-foreground mb-2"
+          >
             Goods Description *
           </label>
           <textarea
@@ -252,7 +314,10 @@ export default function QuoteForm() {
 
         {/* Urgency */}
         <div>
-          <label htmlFor="urgency" className="block text-sm font-medium text-foreground mb-2">
+          <label
+            htmlFor="urgency"
+            className="block text-sm font-medium text-foreground mb-2"
+          >
             Urgency Level
           </label>
           <select
@@ -271,7 +336,10 @@ export default function QuoteForm() {
 
         {/* Additional Information */}
         <div>
-          <label htmlFor="additionalInfo" className="block text-sm font-medium text-foreground mb-2">
+          <label
+            htmlFor="additionalInfo"
+            className="block text-sm font-medium text-foreground mb-2"
+          >
             Additional Information
           </label>
           <textarea
@@ -297,16 +365,21 @@ export default function QuoteForm() {
         {/* Status Messages */}
         {submitStatus === "success" && (
           <div className="p-4 bg-green-50 border border-green-200 rounded-lg aos-fade-up">
-            <p className="text-green-800 font-medium">Thank you! We'll prepare your quote and get back to you within 24 hours.</p>
+            <p className="text-green-800 font-medium">
+              Thank you! We'll prepare your quote and get back to you within 24
+              hours.
+            </p>
           </div>
         )}
 
         {submitStatus === "error" && (
           <div className="p-4 bg-red-50 border border-red-200 rounded-lg aos-fade-up">
-            <p className="text-red-800 font-medium">Something went wrong. Please try again.</p>
+            <p className="text-red-800 font-medium">
+              Something went wrong. Please try again.
+            </p>
           </div>
         )}
       </form>
     </div>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-# 🚀 Akrolink Solutions Limited - Professional Website
+# 🚀 Akrolink Solutions - Professional Website
 
 <div align="center">
 
@@ -30,7 +30,7 @@
 
 ## 🏢 About
 
-Akrolink Solutions Limited is a specialized customs clearance company providing expert services for air courier shipments arriving at Heathrow Airport through CFL (Courier Facility Limited). Our professional website showcases our comprehensive range of customs clearance services, from HS code classification to UK Border Force coordination.
+Akrolink Solutions is a specialized customs clearance company providing expert services for air courier shipments arriving at Heathrow Airport through CFL (Courier Facility Limited). Our professional website showcases our comprehensive range of customs clearance services, from HS code classification to UK Border Force coordination.
 
 ### 🎯 What We Do
 
@@ -286,7 +286,7 @@ We welcome contributions! Please follow these steps:
 
 ## 📄 License
 
-This project is proprietary software owned by Akrolink Solutions Limited. All rights reserved.
+This project is proprietary software owned by Akrolink Solutions. All rights reserved.
 
 ---
 

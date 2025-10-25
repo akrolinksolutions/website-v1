@@ -29,7 +29,7 @@ export default function Navigation() {
               </span>
             </div>
             <span className="font-bold text-lg text-foreground hidden sm:inline">
-              Akrolink
+              Akrolink Solutions
             </span>
           </Link>
 

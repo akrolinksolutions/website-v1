@@ -53,7 +53,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-linear-to-b from-background/80 via-background/70 to-background"></div>
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
         <div className={`aos-fade-up ${isVisible ? 'aos-animate' : ''}`}>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-6 border border-accent/20">
             <CheckCircle size={16} className="text-accent" />
@@ -62,8 +62,8 @@ export default function HeroSection() {
 
           <h1 className="text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
             Welcome To{" "}
-            <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
-              Akrolink Solutions
+            <span className="text-primary">
+            Akrolink Solutions
             </span>
           </h1>
 
@@ -76,22 +76,6 @@ export default function HeroSection() {
             Courier Facility Limited (CFL). We streamline every step from documentation to UK Border Force coordination,
             ensuring your shipments clear customs quickly, cost-effectively, and with complete peace of mind.
           </p>
-
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-            <Link
-              href="/free-quote"
-              className="inline-flex items-center justify-center gap-2 px-10 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 font-semibold text-lg group shadow-lg hover:shadow-xl"
-            >
-              Free Quote
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-10 py-4 border-2 border-primary text-primary rounded-lg hover:bg-primary/5 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl"
-            >
-              Contact Us
-            </Link>
-          </div>
 
           {/* Inline CTA Panel (from former CTASection) */}
           <div className="relative overflow-hidden rounded-2xl bg-linear-to-br from-primary via-primary/90 to-accent p-8 md:p-10 text-center mx-auto max-w-4xl shadow-xl ">
@@ -108,7 +92,7 @@ export default function HeroSection() {
                   href="/free-quote"
                   className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary-foreground text-primary rounded-lg hover:bg-primary-foreground/90 transition-all duration-300 font-medium group"
                 >
-                  Start Your Free Consultation
+                  Start Your Free Quote
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
