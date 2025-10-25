@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { LogisticsBackground } from "@/components/ui/logistics-animations";
+import { AnimatedDeliveryPlane, LogisticsBackground } from "@/components/ui/logistics-animations";
 
 export default function AboutHero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,6 +41,7 @@ export default function AboutHero() {
     >
       {/* Company Branding */}
 
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
@@ -66,7 +67,7 @@ export default function AboutHero() {
           </p>
 
           {/* Key highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-30">
             <div className="bg-background/80 backdrop-blur-md rounded-xl p-6 border border-border/50 shadow-lg">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🏢</span>

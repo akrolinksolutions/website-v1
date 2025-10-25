@@ -5,7 +5,7 @@ import React from "react";
 // Animated World Map Component
 export function AnimatedWorldMap() {
   return (
-    <div className="absolute inset-0 overflow-hidden opacity-30">
+    <div className="absolute inset-0 overflow-hidden opacity-70 top-[20%]">
     <svg
       viewBox="0 0 800 400"
       className="w-full h-full"
@@ -72,7 +72,7 @@ export function AnimatedWorldMap() {
 // Animated Delivery Plane Component
 export function AnimatedDeliveryPlane() {
   return (
-    <div className="absolute top-1/2 w-48 h-32 opacity-70">
+    <div className="absolute top-8 w-48 h-32 opacity-70">
       <svg
         fill="currentColor"
         width="100%"

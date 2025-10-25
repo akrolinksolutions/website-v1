@@ -61,9 +61,9 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            UK Customs Broker Heathrow{" "}
+            Welcome to{" "}
             <span className="text-primary">
-              - Akrolink Solutions
+              Akrolink Solutions
             </span>
           </h1>
 
