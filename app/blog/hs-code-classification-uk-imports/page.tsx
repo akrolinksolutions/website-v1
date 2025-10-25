@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft, FileSearch, AlertCircle, Target, BookOpen } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "HS Code Classification for UK Imports - Complete Guide 2024",
+  title: "HS Code Classification for UK Imports - Complete Guide",
   description: "Complete guide to HS code classification for UK imports. Learn how to classify products correctly, find the right HS code, and optimize duty rates for your imports at Heathrow.",
   keywords: [
     "HS code classification UK",
@@ -36,11 +36,9 @@ export default function BlogPost() {
 
         <header className="mb-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            HS Code Classification for UK Imports: Complete Guide 2024
+            HS Code Classification for UK Imports: Complete Guide
           </h1>
-          <p className="text-lg text-foreground/70 mb-4">
-            Published: {new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
+
         </header>
 
         <div className="prose prose-lg max-w-none">

@@ -17,23 +17,23 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     slug: "how-to-clear-courier-shipments-heathrow",
-    title: "How to Clear Courier Shipments at Heathrow in 2024",
+    title: "How to Clear Courier Shipments at Heathrow",
     description: "Complete guide on how to clear courier shipments at Heathrow Airport with CFL customs clearance, CDS declarations, and UK Border Force coordination.",
-    date: "January 2024",
+    date: "",
     category: "Guide",
   },
   {
     slug: "uk-import-duty-calculation-guide",
-    title: "UK Import Duty Calculation Guide 2024",
+    title: "UK Import Duty Calculation Guide",
     description: "Learn how to calculate UK import duty, VAT, and customs fees for your shipments. Complete breakdown of CIF values, HS codes, and duty rates.",
-    date: "January 2024",
+    date: "",
     category: "Guide",
   },
   {
     slug: "hs-code-classification-uk-imports",
     title: "HS Code Classification for UK Imports",
     description: "Complete guide to HS code classification for UK imports. Learn how to classify products correctly and optimize duty rates for your imports.",
-    date: "January 2024",
+    date: "",
     category: "Guide",
   },
 ]

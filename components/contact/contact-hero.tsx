@@ -62,7 +62,7 @@ export default function ContactHero() {
           </p>
 
           {/* Contact highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-30">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-[200px]">
             <div className="bg-background/80 backdrop-blur-md rounded-xl p-6 border border-border/50 shadow-lg">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">💬</span>

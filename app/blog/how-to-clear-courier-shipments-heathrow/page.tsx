@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft, CheckCircle, AlertCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "How to Clear Courier Shipments at Heathrow in 2024 - Complete Guide",
+  title: "How to Clear Courier Shipments at Heathrow - Complete Guide",
   description: "Complete guide on how to clear courier shipments at Heathrow Airport. Learn about CFL customs clearance, CDS declarations, HS code classification, and UK Border Force requirements for courier shipments.",
   keywords: [
     "how to clear courier shipments at Heathrow",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "UK import clearance service"
   ],
   openGraph: {
-    title: "How to Clear Courier Shipments at Heathrow in 2024",
+    title: "How to Clear Courier Shipments at Heathrow",
     description: "Complete guide on how to clear courier shipments at Heathrow Airport with CFL customs clearance and CDS declarations.",
     type: "article",
   },
@@ -36,11 +36,8 @@ export default function BlogPost() {
 
         <header className="mb-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            How to Clear Courier Shipments at Heathrow in 2024: Complete Guide
+            How to Clear Courier Shipments at Heathrow : Complete Guide
           </h1>
-          <p className="text-lg text-foreground/70 mb-4">
-            Published: {new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
@@ -215,7 +212,7 @@ export default function BlogPost() {
             <li>Expert HS code classification with duty optimization</li>
             <li>Direct UK Border Force coordination at Heathrow CFL</li>
             <li>Fast customs clearance services for air courier shipments</li>
-            <li>Comprehensive UK import clearance service for all courier carriers (DHL, FedEx, UPS, TNT)</li>
+            <li>Comprehensive UK import clearance service for all courier shipments</li>
           </ul>
 
           <div className="bg-primary/10 border border-primary rounded-lg p-8 my-12 text-center">

@@ -72,7 +72,7 @@ export function AnimatedWorldMap() {
 // Animated Delivery Plane Component
 export function AnimatedDeliveryPlane() {
   return (
-    <div className="absolute top-8 w-48 h-32 opacity-70">
+    <div className="w-full absolute top-[10%]  h-32 opacity-70">
       <svg
         fill="currentColor"
         width="100%"

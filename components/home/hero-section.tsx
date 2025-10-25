@@ -92,7 +92,7 @@ export default function HeroSection() {
                   href="/free-quote"
                   className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary-foreground text-primary rounded-lg hover:bg-primary-foreground/90 transition-all duration-300 font-medium group"
                 >
-                  Start Your Free Quote
+                  Get Your Free Quote
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link

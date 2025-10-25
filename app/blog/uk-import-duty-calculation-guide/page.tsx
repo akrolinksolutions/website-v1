@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft, Calculator, TrendingUp, AlertTriangle, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "UK Import Duty Calculation Guide 2024 - HS Codes, VAT & Fees",
+  title: "UK Import Duty Calculation Guide - HS Codes, VAT & Fees",
   description: "Complete guide to UK import duty calculation including HS code classification, VAT rates, and customs fees. Learn how to calculate import costs for UK shipments.",
   keywords: [
     "UK import duty calculation",
@@ -36,11 +36,8 @@ export default function BlogPost() {
 
         <header className="mb-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            UK Import Duty Calculation Guide 2024: Complete Breakdown
+            UK Import Duty Calculation Guide : Complete Breakdown
           </h1>
-          <p className="text-lg text-foreground/70 mb-4">
-            Published: {new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
@@ -196,7 +193,7 @@ export default function BlogPost() {
               </li>
               <li className="flex items-start gap-3">
                 <AlertTriangle className="text-accent shrink-0 mt-1" size={20} />
-                <span><strong>Storage Fees:</strong> If held in customs >24 hours</span>
+                <span><strong>Storage Fees:</strong> If held in customs {">"}24 hours</span>
               </li>
             </ul>
           </div>

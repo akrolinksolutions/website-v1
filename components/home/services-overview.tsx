@@ -109,7 +109,7 @@ export default function ServicesOverview() {
             className={`aos-fade-up ${isVisibleDiv ? "aos-animate" : ""
               } text-4xl lg:text-5xl font-bold text-foreground mb-4`}
           >
-            Our Services
+            Our Services - UK Customs Broker
           </h2>
           <p
             className={`aos-fade-up ${isVisibleDiv ? "aos-animate" : ""
