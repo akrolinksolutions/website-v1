@@ -6,73 +6,73 @@ import React from "react";
 export function AnimatedWorldMap() {
   return (
     <div className="absolute inset-0 overflow-hidden opacity-70 top-[20%]">
-    <svg
-      viewBox="0 0 800 400"
-      className="w-full h-full"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* World map outline */}
-      <path
-        d="M50 200 Q150 180 250 200 T450 200 Q550 220 650 200 T750 200"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        className="text-primary/30"
-      />
-
-      {/* Shipping routes */}
-      <path
-        d="M100 180 Q200 160 300 180 T500 180 Q600 200 700 180"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1"
-        strokeDasharray="5,5"
-        className="text-accent/40 animate-pulse"
+      <svg
+        viewBox="0 0 800 400"
+        className="w-full h-full"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <animate
-          attributeName="stroke-dashoffset"
-          values="0;10"
-          dur="2s"
-          repeatCount="indefinite"
+        {/* World map outline */}
+        <path
+          d="M50 200 Q150 180 250 200 T450 200 Q550 220 650 200 T750 200"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          className="text-primary/30"
         />
-      </path>
 
-      {/* Airport markers */}
-      <circle cx="200" cy="180" r="4" fill="currentColor" className="text-primary/50">
-        <animate
-          attributeName="r"
-          values="4;8;4"
-          dur="3s"
-          repeatCount="indefinite"
-        />
-      </circle>
-      <circle cx="400" cy="200" r="4" fill="currentColor" className="text-primary/50">
-        <animate
-          attributeName="r"
-          values="4;8;4"
-          dur="3s"
-          repeatCount="indefinite"
-          begin="1s"
-        />
-      </circle>
-      <circle cx="600" cy="190" r="4" fill="currentColor" className="text-primary/50">
-        <animate
-          attributeName="r"
-          values="4;8;4"
-          dur="3s"
-          repeatCount="indefinite"
-          begin="2s"
-        />
-      </circle>
-    </svg>
-  </div>
+        {/* Shipping routes */}
+        <path
+          d="M100 180 Q200 160 300 180 T500 180 Q600 200 700 180"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1"
+          strokeDasharray="5,5"
+          className="text-accent/40 animate-pulse"
+        >
+          <animate
+            attributeName="stroke-dashoffset"
+            values="0;10"
+            dur="2s"
+            repeatCount="indefinite"
+          />
+        </path>
+
+        {/* Airport markers */}
+        <circle cx="200" cy="180" r="4" fill="currentColor" className="text-primary/50">
+          <animate
+            attributeName="r"
+            values="4;8;4"
+            dur="3s"
+            repeatCount="indefinite"
+          />
+        </circle>
+        <circle cx="400" cy="200" r="4" fill="currentColor" className="text-primary/50">
+          <animate
+            attributeName="r"
+            values="4;8;4"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="1s"
+          />
+        </circle>
+        <circle cx="600" cy="190" r="4" fill="currentColor" className="text-primary/50">
+          <animate
+            attributeName="r"
+            values="4;8;4"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="2s"
+          />
+        </circle>
+      </svg>
+    </div>
   );
 }
 
 // Animated Delivery Plane Component
 export function AnimatedDeliveryPlane() {
   return (
-    <div className="w-full absolute top-[10%]  h-32 opacity-70">
+    <div className="w-full absolute top-[6%]  h-32 opacity-70">
       <svg
         fill="currentColor"
         width="100%"
@@ -194,12 +194,12 @@ export function AnimatedDeliveryPlane() {
             </g>
           </g>
         </g>
-        {/* Horizontal movement animation */}
+        {/* Horizontal movement animation - always left to right */}
         <animateTransform
           attributeName="transform"
           type="translate"
-          values="-500,0; 1500,0; -500,0"
-          dur="25s"
+          values="-500,0; 1500,0"
+          dur="15s"
           repeatCount="indefinite"
         />
       </svg>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
@@ -8,11 +9,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold">A</span>
-              </div>
-              <span className="font-bold text-lg">Akrolink</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/logo.png"
+                alt="Akrolink Solutions"
+                width={180}
+                height={40}
+                className="h-8 w-auto"
+              />
+              <p className="text-primary-foreground/80 text-sm">Akrolink Solutions</p>
             </div>
             <p className="text-primary-foreground/80 text-sm">
               Expert customs clearance and import documentation services for UK businesses.

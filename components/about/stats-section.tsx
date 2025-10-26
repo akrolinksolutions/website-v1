@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { label: "Shipments Cleared", value: "1.1M+" },
+  { label: "Shipments Cleared", value: "576k +" },
   { label: "Years of Experience", value: "5+" },
   { label: "Average Clearance Time", value: "4 hrs" },
 ];
