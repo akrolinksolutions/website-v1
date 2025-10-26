@@ -72,7 +72,7 @@ export function AnimatedWorldMap() {
 // Animated Delivery Plane Component
 export function AnimatedDeliveryPlane() {
   return (
-    <div className="w-full absolute top-[6%]  h-32 opacity-70">
+    <div className="w-full absolute top-[6%] mx-auto h-32 opacity-70">
       <svg
         fill="currentColor"
         width="100%"
@@ -198,7 +198,7 @@ export function AnimatedDeliveryPlane() {
         <animateTransform
           attributeName="transform"
           type="translate"
-          values="-500,0; 1500,0"
+          values="-1200,0; 1200,0"
           dur="15s"
           repeatCount="indefinite"
         />
