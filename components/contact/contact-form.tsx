@@ -169,7 +169,7 @@ export default function ContactForm() {
               value={formData.phone}
               onChange={handleChange}
               className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-              placeholder="+91 8100306576 / +91 9136872044"
+              placeholder="+91 1234567890"
             />
           </div>
 
