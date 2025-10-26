@@ -39,9 +39,10 @@ export default function FreeQuotePage() {
     <main className="pt-16">
       <QuoteHero />
       <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <ContactInfo />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-1 gap-12">
           <QuoteForm />
-          <ContactInfo />
+
         </div>
       </section>
     </main>

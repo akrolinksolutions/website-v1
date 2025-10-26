@@ -2,6 +2,7 @@
 
 import type React from "react";
 import { useEffect, useRef, useState } from "react";
+import { Spinner } from "@/components/ui/spinner";
 
 export default function QuoteForm() {
   const [formData, setFormData] = useState({
@@ -24,6 +25,16 @@ export default function QuoteForm() {
     "idle" | "success" | "error"
   >("idle");
 
+  // Check if all required fields are filled
+  const isFormValid =
+    formData.name.trim() !== "" &&
+    formData.email.trim() !== "" &&
+    formData.phone.trim() !== "" &&
+    formData.shipmentType.trim() !== "" &&
+    formData.noOfShipments.trim() !== "" &&
+    formData.originCountry.trim() !== "" &&
+    formData.goodsDescription.trim() !== "";
+
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -40,7 +51,21 @@ export default function QuoteForm() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          formType: "quote",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send quote request");
+      }
+
       setSubmitStatus("success");
       setFormData({
         name: "",
@@ -356,9 +381,10 @@ export default function QuoteForm() {
         {/* Submit Button */}
         <button
           type="submit"
-          disabled={isSubmitting}
-          className="w-full px-6 py-3 bg-linear-to-r from-primary to-accent text-primary-foreground rounded-lg hover:opacity-90 transition-all duration-300 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={isSubmitting || !isFormValid}
+          className="w-full px-6 py-3 bg-linear-to-r from-primary to-accent text-primary-foreground rounded-lg hover:opacity-90 transition-all duration-300 font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
+          {isSubmitting && <Spinner className="size-4" />}
           {isSubmitting ? "Getting Your Quote..." : "Get Free Quote"}
         </button>
 
