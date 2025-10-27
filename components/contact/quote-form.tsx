@@ -13,7 +13,7 @@ export default function QuoteForm() {
     shipmentType: "",
     noOfShipments: "",
     originCountry: "",
-    destinationCountry: "",
+    destinationCountry: "United Kingdom",
     goodsDescription: "",
     estimatedValue: "",
     urgency: "",
