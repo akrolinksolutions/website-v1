@@ -23,8 +23,39 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPost() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "UK Import Duty Calculation Guide - HS Codes, VAT & Fees",
+    "description": "Complete guide to UK import duty calculation including HS code classification, VAT rates, and customs fees. Learn how to calculate import costs for UK shipments.",
+    "image": "https://akrolinksolutions.com/customs-clearance-logistics-warehouse-heathrow.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Akrolink Solutions",
+      "url": "https://akrolinksolutions.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Akrolink Solutions",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://akrolinksolutions.com/logoWithBg.png"
+      }
+    },
+    "datePublished": "2025-01-10",
+    "dateModified": "2025-01-10",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://akrolinksolutions.com/blog/uk-import-duty-calculation-guide"
+    }
+  };
+
   return (
     <main className="pt-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Link
           href="/blog"

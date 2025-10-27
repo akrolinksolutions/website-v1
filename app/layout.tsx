@@ -99,9 +99,8 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'TH_MCnov0IiSiTheq2bhmV8tS9_EQ1Grwhux1ewsgHg',
     yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
   },
   category: 'Customs Clearance Services',
 }

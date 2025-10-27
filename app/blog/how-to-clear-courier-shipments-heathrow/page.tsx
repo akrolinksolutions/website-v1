@@ -23,8 +23,39 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPost() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Clear Courier Shipments at Heathrow - Complete Guide",
+    "description": "Complete guide on how to clear courier shipments at Heathrow Airport. Learn about CFL customs clearance, CDS declarations, HS code classification, and UK Border Force requirements for courier shipments.",
+    "image": "https://akrolinksolutions.com/customs-clearance-logistics-warehouse-heathrow.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Akrolink Solutions",
+      "url": "https://akrolinksolutions.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Akrolink Solutions",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://akrolinksolutions.com/logoWithBg.png"
+      }
+    },
+    "datePublished": "2025-01-15",
+    "dateModified": "2025-01-15",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://akrolinksolutions.com/blog/how-to-clear-courier-shipments-heathrow"
+    }
+  };
+
   return (
     <main className="pt-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Link
           href="/"

@@ -23,8 +23,39 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPost() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "HS Code Classification for UK Imports: Complete Guide",
+    "description": "Complete guide to HS code classification for UK imports. Learn how to classify products correctly, find the right HS code, and optimize duty rates for your imports at Heathrow.",
+    "image": "https://akrolinksolutions.com/customs-clearance-logistics-warehouse-heathrow.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Akrolink Solutions",
+      "url": "https://akrolinksolutions.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Akrolink Solutions",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://akrolinksolutions.com/logoWithBg.png"
+      }
+    },
+    "datePublished": "2025-01-05",
+    "dateModified": "2025-01-05",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://akrolinksolutions.com/blog/hs-code-classification-uk-imports"
+    }
+  };
+
   return (
     <main className="pt-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Link
           href="/blog"
