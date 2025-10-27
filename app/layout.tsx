@@ -55,14 +55,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://akrolinksolutions.com'),
+  metadataBase: new URL('https://www.akrolinksolutions.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://akrolinksolutions.com',
+    url: 'https://www.akrolinksolutions.com',
     siteName: 'Akrolink Solutions',
     title: 'Fast Customs Clearance at Heathrow (CFL) | Akrolink Solutions – UK Customs Broker',
     description: 'Akrolink Solutions offers reliable customs clearance services for air courier shipments at Heathrow Airport. We handle all paperwork, HS code classification, and import duty optimisation.',
@@ -115,8 +115,8 @@ export default function RootLayout({
     "@type": "Organization",
     "name": "Akrolink Solutions",
     "description": "Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL",
-    "url": "https://akrolinksolutions.com",
-    "logo": "https://akrolinksolutions.com/logoWithBg.png",
+    "url": "https://www.akrolinksolutions.com",
+    "logo": "https://www.akrolinksolutions.com/logoWithBg.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91 8100306576",

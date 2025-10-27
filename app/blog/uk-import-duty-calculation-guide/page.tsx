@@ -28,25 +28,25 @@ export default function BlogPost() {
     "@type": "Article",
     "headline": "UK Import Duty Calculation Guide - HS Codes, VAT & Fees",
     "description": "Complete guide to UK import duty calculation including HS code classification, VAT rates, and customs fees. Learn how to calculate import costs for UK shipments.",
-    "image": "https://akrolinksolutions.com/customs-clearance-logistics-warehouse-heathrow.jpg",
+    "image": "https://www.akrolinksolutions.com/customs-clearance-logistics-warehouse-heathrow.jpg",
     "author": {
       "@type": "Organization",
       "name": "Akrolink Solutions",
-      "url": "https://akrolinksolutions.com"
+      "url": "https://www.akrolinksolutions.com"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Akrolink Solutions",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://akrolinksolutions.com/logoWithBg.png"
+        "url": "https://www.akrolinksolutions.com/logoWithBg.png"
       }
     },
     "datePublished": "2025-01-10",
     "dateModified": "2025-01-10",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://akrolinksolutions.com/blog/uk-import-duty-calculation-guide"
+      "@id": "https://www.akrolinksolutions.com/blog/uk-import-duty-calculation-guide"
     }
   };
 

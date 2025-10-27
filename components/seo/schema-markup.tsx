@@ -2,11 +2,11 @@ export default function SchemaMarkup() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://akrolinksolutions.com/#organization",
+    "@id": "https://www.akrolinksolutions.com/#organization",
     name: "Akrolink Solutions",
     description:
       "Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL",
-    url: "https://akrolinksolutions.com",
+    url: "https://www.akrolinksolutions.com",
     telephone: "+91 8100306576",
     email: "info@akrolinksolutions.com",
     address: {

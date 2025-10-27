@@ -28,25 +28,25 @@ export default function BlogPost() {
     "@type": "Article",
     "headline": "HS Code Classification for UK Imports: Complete Guide",
     "description": "Complete guide to HS code classification for UK imports. Learn how to classify products correctly, find the right HS code, and optimize duty rates for your imports at Heathrow.",
-    "image": "https://akrolinksolutions.com/customs-clearance-logistics-warehouse-heathrow.jpg",
+    "image": "https://www.akrolinksolutions.com/customs-clearance-logistics-warehouse-heathrow.jpg",
     "author": {
       "@type": "Organization",
       "name": "Akrolink Solutions",
-      "url": "https://akrolinksolutions.com"
+      "url": "https://www.akrolinksolutions.com"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Akrolink Solutions",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://akrolinksolutions.com/logoWithBg.png"
+        "url": "https://www.akrolinksolutions.com/logoWithBg.png"
       }
     },
     "datePublished": "2025-01-05",
     "dateModified": "2025-01-05",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://akrolinksolutions.com/blog/hs-code-classification-uk-imports"
+      "@id": "https://www.akrolinksolutions.com/blog/hs-code-classification-uk-imports"
     }
   };
 
