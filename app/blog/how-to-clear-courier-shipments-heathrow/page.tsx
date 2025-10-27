@@ -60,6 +60,7 @@ export default function BlogPost() {
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors mb-8"
+          aria-label="Return to homepage"
         >
           <ArrowLeft size={20} />
           Back to Home

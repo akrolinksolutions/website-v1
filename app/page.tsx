@@ -25,6 +25,7 @@ export default function Home() {
             <Link
               href="/blog/how-to-clear-courier-shipments-heathrow"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+              aria-label="Read our guide on how to clear courier shipments at Heathrow"
             >
               Read Our Latest Guide
               <ArrowRight size={20} />

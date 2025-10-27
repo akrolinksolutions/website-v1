@@ -59,6 +59,7 @@ export default function BlogPage() {
                 key={post.slug}
                 href={`/blog/${post.slug}`}
                 className="group bg-card rounded-xl border border-border hover:border-accent hover:shadow-xl transition-all duration-300 overflow-hidden"
+                aria-label={`Read full article: ${post.title}`}
               >
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-sm text-foreground/60 mb-3">
@@ -72,7 +73,7 @@ export default function BlogPage() {
                   </h2>
                   <p className="text-foreground/70 mb-4">{post.description}</p>
                   <div className="flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-                    Read More
+                    Read Full Article
                     <ArrowRight size={20} />
                   </div>
                 </div>

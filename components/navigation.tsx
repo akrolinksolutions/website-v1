@@ -22,10 +22,10 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group" aria-label="Akrolink Solutions Home">
             <div className="">
               <span className="">
-                <Image src={Logo} alt="Akrolink" width={30} height={30} />
+                <Image src={Logo} alt="Akrolink Solutions Logo" width={30} height={30} />
               </span>
             </div>
             <span className="font-bold text-lg text-foreground hidden sm:inline">
@@ -42,8 +42,8 @@ export default function Navigation() {
                   key={item.href}
                   href={item.href}
                   className={`relative px-3 py-2 rounded-lg transition-all duration-300 font-medium text-sm ${isActive
-                      ? "text-primary bg-primary/10 border border-primary/20"
-                      : "text-foreground hover:text-primary hover:bg-primary/5"
+                    ? "text-primary bg-primary/10 border border-primary/20"
+                    : "text-foreground hover:text-primary hover:bg-primary/5"
                     }`}
                 >
                   {item.label}
@@ -60,6 +60,7 @@ export default function Navigation() {
             <Link
               href="/contact"
               className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium text-sm"
+              aria-label="Get started with our customs clearance services"
             >
               Get Started
             </Link>
@@ -69,6 +70,8 @@ export default function Navigation() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -84,8 +87,8 @@ export default function Navigation() {
                   key={item.href}
                   href={item.href}
                   className={`block px-4 py-3 rounded-lg transition-all duration-300 font-medium ${isActive
-                      ? "text-primary bg-primary/10 border-l-4 border-primary"
-                      : "text-foreground hover:bg-muted hover:text-primary"
+                    ? "text-primary bg-primary/10 border-l-4 border-primary"
+                    : "text-foreground hover:bg-muted hover:text-primary"
                     }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -97,6 +100,7 @@ export default function Navigation() {
               href="/contact"
               className="block px-4 py-2 mt-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-center font-medium"
               onClick={() => setIsOpen(false)}
+              aria-label="Get started with our customs clearance services"
             >
               Get Started
             </Link>

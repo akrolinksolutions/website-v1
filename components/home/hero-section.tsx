@@ -98,8 +98,9 @@ export default function HeroSection() {
                 <Link
                   href="/services"
                   className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-primary-foreground text-primary-foreground rounded-lg hover:bg-primary-foreground/10 transition-all duration-300 font-medium"
+                  aria-label="Learn more about our customs clearance services"
                 >
-                  Learn More
+                  Learn More About Our Services
                 </Link>
               </div>
             </div>

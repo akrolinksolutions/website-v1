@@ -26,7 +26,7 @@ const services = [
   {
     icon: Ban,
     title: "Prohibited Items",
-    description: "Know More",
+    description: "Learn about prohibited and restricted items for UK imports",
   },
 ];
 
@@ -143,6 +143,19 @@ export default function ServicesOverview() {
                 onClick={
                   isLastItem
                     ? () => router.push("/prohibited-items")
+                    : undefined
+                }
+                role={isLastItem ? "button" : undefined}
+                tabIndex={isLastItem ? 0 : undefined}
+                aria-label={isLastItem ? "Learn about prohibited items for UK imports" : undefined}
+                onKeyDown={
+                  isLastItem
+                    ? (e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        router.push("/prohibited-items");
+                      }
+                    }
                     : undefined
                 }
               >

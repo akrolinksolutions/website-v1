@@ -48,6 +48,11 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/blog" className="hover:text-accent transition-colors">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -56,24 +61,24 @@ export default function Footer() {
             <h3 className="font-bold mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <Link href="/services" className="hover:text-accent transition-colors">
                   Customs Clearance
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <Link href="/services" className="hover:text-accent transition-colors">
                   Import Documentation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <Link href="/services" className="hover:text-accent transition-colors">
                   HS Code Classification
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <Link href="/services" className="hover:text-accent transition-colors">
                   Compliance Guidance
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -106,10 +111,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/80">
             <p>&copy; 2025 Akrolink Solutions. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href="/privacy-policy" className="hover:text-accent transition-colors" aria-label="View our privacy policy">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href="/terms-of-service" className="hover:text-accent transition-colors" aria-label="View our terms of service">
                 Terms of Service
               </a>
             </div>
