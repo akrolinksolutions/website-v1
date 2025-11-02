@@ -7,7 +7,7 @@ const benefits = [
   {
     icon: Clock,
     title: "Fast Turnaround",
-    description: "Average clearance time of 24 hours, getting your goods to market quickly.",
+    description: "Average clearance time of 4 hours, getting your goods to market quickly.",
   },
   {
     icon: DollarSign,
