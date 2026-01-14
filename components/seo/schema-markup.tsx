@@ -7,7 +7,7 @@ export default function SchemaMarkup() {
     description:
       "Specialized customs clearance services for air courier shipments at Heathrow Airport through CFL",
     url: "https://www.akrolinksolutions.com",
-    telephone: "+91 8100306576",
+    telephone: "+44 2075693010",
     email: "info@akrolinksolutions.com",
     address: {
       "@type": "PostalAddress",

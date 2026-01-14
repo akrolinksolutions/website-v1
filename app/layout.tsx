@@ -119,7 +119,7 @@ export default function RootLayout({
     "logo": "https://www.akrolinksolutions.com/logoWithBg.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91 8100306576",
+      "telephone": "+44 2075693010",
       "contactType": "customer service",
       "areaServed": "GB",
       "availableLanguage": "English"

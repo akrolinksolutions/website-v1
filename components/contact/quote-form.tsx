@@ -187,7 +187,7 @@ export default function QuoteForm() {
               onChange={handleChange}
               required
               className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-              placeholder="+91 1234567890"
+              placeholder="+44 20 1234 5678"
             />
           </div>
 
